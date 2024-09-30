@@ -8,11 +8,11 @@ class Estudiante(models.Model):
     ap = models.CharField(max_length=40, verbose_name='Apellido Paterno')
     am = models.CharField(max_length=40, verbose_name='Apellido Materno')
     dir = models.TextField(null=True, verbose_name='Dirección')
-    tel = models.TextField(null=True, verbose_name='Telefono')
+    tel = models.TextField(null=True, verbose_name='Nacionalidad')
     
-    dni=models.ImageField(upload_to='imagenes/', verbose_name='foto dni',null=True)
-    isa= models.FileField(upload_to='user_documents/', verbose_name='isa',null=True)
-    cus= models.FileField(upload_to='imagenes/', verbose_name='cus',null=True)
+    dni=models.ImageField(upload_to='imagenes/', verbose_name='Foto dni',null=True)
+    isa= models.FileField(upload_to='user_documents/', verbose_name='acta de nacimiento',null=True)
+    cus= models.FileField(upload_to='imagenes/', verbose_name='carnet de vacunacion',null=True)
     
     
     def __str__(self):
