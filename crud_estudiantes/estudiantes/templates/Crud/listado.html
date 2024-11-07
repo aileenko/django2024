@@ -7,7 +7,7 @@
             <a name="btnuevo" id="btnuevo" class="btn btn-primary" href="{% url 'crear' %}" role="button">Nueva persona</a>
         </div>
         <div class="card-body">
-            <h4 class="card-title">Clientes</h4>
+            <h4 class="card-title">Personas</h4>
             <table class="table">
                 <thead>
                     <tr>
@@ -41,14 +41,14 @@
                 
                         <td>  
                             {% if e.isa %}  
-                                <a href="{{ e.isa.url }}" target="_blank">Ver ISA</a>  
+                                <a href="{{ e.isa.url }}" target="_blank">Ver acta de nacimiento</a>  
                             {% else %}  
                                 No disponible  
                             {% endif %}  
                         </td>  
                         <td>  
                             {% if e.cus %}  
-                                <a href="{{ e.cus.url }}" target="_blank">Ver CUS</a>  
+                                <a href="{{ e.cus.url }}" target="_blank">Ver carnet de vacunacion</a>  
                             {% else %}  
                                 No disponible  
                             {% endif %}  
